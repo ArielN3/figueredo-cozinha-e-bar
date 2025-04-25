@@ -1,0 +1,113 @@
+CSS
+
+:root {
+    --primary-color: #646cff;
+    --background-color: #f9f9f9;
+    --text-color: #213547;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-icon {
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-card h3 {
+    margin: 1rem 0;
+}
+
+.product-card button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.product-card button:hover {
+    opacity: 0.9;
+}
+
+.cart {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background: white;
+    padding: 2rem;
+    box-shadow: -2px 0 4px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+.cart.hidden {
+    display: none;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.checkout-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.checkout-btn:hover {
+    opacity: 0.9;
+}
